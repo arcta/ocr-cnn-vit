@@ -35,11 +35,11 @@ In this experiment we compare `ViT` and `CNN` based `UNet` in document-page layo
 
 ### Architectures
 
-    === CNN ===================================================================================================
+    --- CNN ----------------------------------------------
 
 ![CNN](unet-blocks.svg)
 
-    === ViT ===================================================================================================
+    --- ViT ----------------------------------------------
 
 ![ViT](uvit-blocks.svg)
 
@@ -77,13 +77,13 @@ For the multitask training we used a single encoder with a set of decoders: segm
 #### Segmentation
 Segmentation task: text presence (blue); table outlines presence (green); potential user input space (red)
 
-    === CNN segmentation ======================================================================================
+    --- CNN segmentation ----------------------------------------------
 
 ![CNN](cnn-output.png)
 
 For the same number of training epochs `CNN` delivers better outcome in "structural" recognition: text, non-doc., and potential input space.
 
-    === ViT segmentation ======================================================================================
+    --- ViT segmentation ----------------------------------------------
 
 ![ViT](vit-output.png)
 
@@ -108,11 +108,11 @@ After 9 epochs:
 
 Quite interesting difference in the structure of the latent space produced by `CNN` vs `ViT`:
 
-    === CNN latent space ======================================================================================
+    --- CNN latent space ----------------------------------------------
 
 ![CNN](cnn-latent.png)
 
-    === ViT latent space ======================================================================================
+    --- ViT latent space ----------------------------------------------
 
 ![ViT](vit-latent.png)
 
